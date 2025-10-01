@@ -48,7 +48,12 @@ main {
   margin-bottom: 30px;
   color: #333;
 }
-
+.producto button{
+  border: none;
+  padding: 6px 12px;
+  background-color: rgb(149, 145, 145);
+  font-size: 16px;
+}
 .lista-productos {
   display: flex;
   justify-content: center;
@@ -61,13 +66,16 @@ main {
   border-radius: 28px;
   width: 200px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: center; 
+  display: grid;
+  grid-template-rows: 250px 80px 40px;
 }
 
 .producto img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  align-self: center;
 }
 
 .producto h3 {
@@ -97,6 +105,11 @@ footer {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: all 1s;
+}
+.testimonios:hover{
+  transform: scale(1.2);
 }
 .testimonios h2{
   color: #333;
@@ -116,6 +129,7 @@ footer {
   padding: 15px 30px;
   color: white;
   font-family: Arial, sans-serif;
+  list-style: none;
 }
 
 .navbar .logo {
@@ -165,12 +179,20 @@ footer {
   line-height: 1.5;
 }
 .imagenes {
-  margin-top: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+  gap: 10px;
+  padding: 20px 0;
+  flex-wrap: wrap;
 }
 
 .imagenes img {
-  width: 300px;
-  margin: 10px;
+ width: 300px;
+ flex-grow: 1;
+
 }
 .contenedoroferta{
   width: 80vw;
@@ -199,10 +221,20 @@ footer {
 }
 
 .contacto a {
-    color: #3498db;
+    color: #348ddb;
     text-decoration: none;
 }
 
 .contacto a:hover{
     text-decoration: underline;
+}
+.rs{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.7s;
+}
+.rs:hover{
+  transform: scale(1.2);
 }
